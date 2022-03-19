@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
     <title>Pizza-Place</title>
 </head>
 <body>
@@ -40,16 +42,143 @@
             <p><strong>PIZZACHU</strong>is a home for family,already existing friendship and friendhip that is yet to be born.</p>
     </div>
 
-    <div>
-        <h1>sizes</h1>
-        <h2>sizes</h2>
-    </div>
+    <section id="size" class="pt-3">
+        <div class="container">
+            <h2>SIZE</h2>
+            <div>
+                <div class="container">
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <img src="./image/pizza3.jpg" height="200px" width="200px" id="img-1">
+                            <h4 class="1">Ksh.500</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./image/pizza2r.png" height="200px" width="200px" id="img-2">
+                            <h4 class="1">Ksh.900</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./image/pizza1r.png" height="200px" width="200px" id="img-3">
+                            <h4 class="1">Ksh.1200</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="pt-4">
+        <div class="container">
+            <h2>ORDER</h2>
+            <div>
+                <form action="dropdown">
+                    <label for="size">Choose the size</label>
+                    <select name="size" id="size">
+                        <option class="item">Small <span class="price">ksh.500</span></option>
+                        <option class="item">Medium <span class="price">ksh.900</span></option>
+                        <option class="item">Large <span class="price">ksh.1200</span></option>
+                    </select>
+                    <br>
+                    <label for="crust">Choose the crust</label>
+                    <select name="crust" id="crust">
+                        <option class="item">Crispy <span class="price">ksh.150</span></option>
+                        <option class="item">stuffed <span class="price">ksh.250</span></option>
+                        <option class="item">Gliten-free <span class="price">ksh.350</span></option>
+                        
+                    </select>
+                    <br>
+                    <label for="toppings">Choose your topping</label>
+                    <select class="toppings width-100%" multiple>
+                        <option class="item">Pepperoni <span class="price">ksh.100</span></option>
+                        <option class="item">Meat delux<span class="price">ksh.100</span></option>
+                        <option class="item">Hawaiian<span class="price">ksh.100</span></option>
+                        <option class="item">Chicken periperi<span class="price">ksh.100</span></option>
+                        <option class="item">Mushroom<span class="price">ksh.100</span></option>
+                        <option class="item">BBQ steak<span class="price">ksh.100</span></option>
+                        <option class="item">Vegeterian<span class="price">ksh.100</span></option>
+                        <option class="item">Beef pepperoni<span class="price">ksh.100</span></option>
+                        <option class="item">Chicken hawaiian<span class="price">ksh.100</span></option>
+                        <option class="item">Sausage delux<span class="price">ksh.100</span></option>
+
+                    </select>
+                    <br>
+                    <label for="total number">Choose the number you want</label>
+                    <select name="total number" id="total number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <br>
+                    <section id="basket">
+                        <p>Total price: <span class="total_price"></span></p>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <form>
+           <h2>Delivery</h2> 
+            <br>
+        
+            <input type="radio"
+                   name="agree"
+                   value="yes">yes
+            <br>
+            <input type="radio"
+                   name="agree"
+                   value="no">No       
+            <br>
+            <input type="submit">
+            <br>
+
+            <h2>Pick-up</h2> 
+            <br>
+            <input type="radio"
+                   name="agree"
+                   value="yes">yes
+            <br>
+            <input type="radio"
+                   name="agree"
+                   value="no">No
+            <br>
+            <input type="submit">
+        </form>
+
+        <button class="btn" onclick="display()">CHECKOUT</button>
+    </section>
+
+    <section id="contact" class="pt-5">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <div class="container">
+                <h2>FIND US ON</h2>
+                <div class="row pt-3">
+                    <div class="col-md-4">
+                        <img src="./image/facebook.png" height="200px" id="img-1">
+                    </div>   
+                    <div class="col-md-4">
+                        <img src="./image/skype.png" height="200px" id="img-2">
+                    </div>  
+                    <div class="col-md-4">
+                        <img src="./image/twitter.png" height="200px" id="img-3">
+                    </div>  
+                    <div class="col-md-4">
+                        <img src="./image/you_tube.png" height="200px" id="img-4">
+                    </div>  
+
+            </div>
+            <div class="container">
+                <h3>Telephone Number - 0712345674</h3>
+                <h3>Email Address - Olakimzy460@gmail.com</h3>
+            </div>
+        </div>
+    </section>
+
+    <div>dfg</div>
 
 
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
