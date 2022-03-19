@@ -51,5 +51,7 @@
 }
 .dropdown select {
     width: 100%;
+    padding: 20px;
+    display: none;
+    margin: 20px;
 }
-

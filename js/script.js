@@ -1,18 +1,19 @@
 $(document).ready(function(){
-    //show hide popover
-    $(".dropdown").click(function(){
-        $(this).find(".dropdown-menu").slideToggle("fast")
-    });
-    $(document).on("click",function(event){
-        var $trigger =
-        $(".dropdown");
-        if($trigger !== 
-            event.target && 
-            !$trigger.has(event.target).length) {
-                $(".dropdown-menu").slideup("fast");
-            }
-    })
+    $("select").change(function(){
+        $(this).find("option:selected").
+        each(function(){
+            var optionValue = 
+        $(this).attr("value");
+            if(optionValue){
+                 $(".box").not("." + optionValue).hide();
+                 $("." + optionalValue).show();
+            } else {
+                 $(".box").hide();
+            }   
+        })
+    }).change();
 })
+
 var total = 0;
 $("#items").on('click',".item", function(){
     $(this).appendTo("#basket")
