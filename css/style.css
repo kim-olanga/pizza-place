@@ -1,8 +1,4 @@
-*{
-    background-image: url(../image/background1.jpg);
-    background-attachment: fixed;
 
-}
 .topnav {
     padding: 0;
     margin: 0;
@@ -13,39 +9,22 @@
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.topnav {
-    height: 80px;
-    width: 100%;
-}
 .nav ul {
     float: right;
     margin-right: 20px;
 }
 .nav ul li {
-    display: flex;
+    display: inline;
     line-height: 80px;
     margin: 0 5px;
 }
 .nav ul li a {
     color: black;
     font-size: 17px;
-    float: right;
-    display: flex;
+    display: inline;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
-}
-.a.active,a:hover {
-    transition: 5s;
-
-}
-.checkbtn {
-    font-size: 30px;
-    color: blue;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    display: none;
 }
 @media (max-width: 952px) {
     nav ul li a {
@@ -53,9 +32,6 @@
     }
 }
 @media (max-width: 858px) {
-    .checkbtn {
-        display: block;
-    }
     ul {
         position: fixed;
         width: 100%;
@@ -63,12 +39,10 @@
         text-align: right;
     }
     nav ul li {
-        display: block;
+        display: inline;
     }
     nav ul li a {
         font-size: 20px;
     }
-    a:hover, .a.active {
-        background: none;
-    }
 }
+
