@@ -49,22 +49,21 @@
                 <div class="container">
                     <div class="row pt-3">
                         <div class="col-md-4">
-                            <img src="./image/pizza3.jpg" height="200px" id="img-1">
+                            <img src="./image/pizza3.jpg" height="200px" width="200px" id="img-1">
                             <h4 class="1">Ksh.500</h4>
                         </div>
                         <div class="col-md-4">
-                            <img src="./image/pizza2r.png" height="200px" id="img-2">
+                            <img src="./image/pizza2r.png" height="200px" width="200px" id="img-2">
                             <h4 class="1">Ksh.900</h4>
                         </div>
                         <div class="col-md-4">
-                            <img src="./image/pizza1r.png" height="200px" id="img-3">
+                            <img src="./image/pizza1r.png" height="200px" width="200px" id="img-3">
                             <h4 class="1">Ksh.1200</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class=""></button>
     </section>
 
     <section id="order" class="pt-4">
@@ -74,9 +73,9 @@
                 <form action="dropdown">
                     <label for="size">Choose the size</label>
                     <select name="size" id="size">
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
+                        <option class="item">Small <span class="price">ksh.500</span></option>
+                        <option class="item">Medium <span class="price">ksh.900</span></option>
+                        <option class="item">Large <span class="price">ksh.1200</span></option>
                     </select>
                     <br>
                     <label for="crust">Choose the crust</label>
@@ -117,7 +116,7 @@
         </div>
 
         <form>
-            Delivery
+           <h2>Delivery</h2> 
             <br>
         
             <input type="radio"
@@ -131,7 +130,7 @@
             <input type="submit">
             <br>
 
-            Pick-up 
+            <h2>Pick-up</h2> 
             <br>
             <input type="radio"
                    name="agree"
@@ -143,6 +142,8 @@
             <br>
             <input type="submit">
         </form>
+
+        <button class="btn" onclick="display()">CHECKOUT</button>
     </section>
 
     <section id="contact" class="pt-5">
