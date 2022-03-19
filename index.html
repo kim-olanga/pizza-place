@@ -64,6 +64,7 @@
                 </div>
             </div>
         </div>
+        <button class=""></button>
     </section>
 
     <section id="order" class="pt-4">
@@ -73,30 +74,32 @@
                 <form action="dropdown">
                     <label for="size">Choose the size</label>
                     <select name="size" id="size">
-                        <option value="Small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
                     </select>
                     <br>
                     <label for="crust">Choose the crust</label>
                     <select name="crust" id="crust">
-                        <option value="crispy">Crispy@150</option>
-                        <option value="stuffed">Stuffed@250</option>
-                        <option value="gluten-free">Glutten-free@350</option>
+                        <option class="item">Crispy <span class="price">ksh.150</span></option>
+                        <option class="item">stuffed <span class="price">ksh.250</span></option>
+                        <option class="item">Gliten-free <span class="price">ksh.350</span></option>
+                        
                     </select>
                     <br>
                     <label for="toppings">Choose your topping</label>
-                    <select name="toppings" id="toppings" multiple>
-                        <option value="pepperoni">pepperoni@100</option>
-                        <option value="meat delux">Meat delux@100</option>
-                        <option value="hawaiian">Hawaiian@100</option>
-                        <option value="chicken periperi">Chicken periperi@100</option>
-                        <option value="mushroom">Mushroom@100</option>
-                        <option value="bbq steak">BBQ steak@100</option>
-                        <option value="vegetarian">vegetarian@100</option>
-                        <option value="beef peperoni">Beef peporoni@100</option>
-                        <option value="chicken hawaiian">Chicken hawaiian@100</option>
-                        <option value="sausage delux">Sausage delux@100</option>
+                    <select class="toppings width-100%" multiple>
+                        <option class="item">Pepperoni <span class="price">ksh.100</span></option>
+                        <option class="item">Meat delux<span class="price">ksh.100</span></option>
+                        <option class="item">Hawaiian<span class="price">ksh.100</span></option>
+                        <option class="item">Chicken periperi<span class="price">ksh.100</span></option>
+                        <option class="item">Mushroom<span class="price">ksh.100</span></option>
+                        <option class="item">BBQ steak<span class="price">ksh.100</span></option>
+                        <option class="item">Vegeterian<span class="price">ksh.100</span></option>
+                        <option class="item">Beef pepperoni<span class="price">ksh.100</span></option>
+                        <option class="item">Chicken hawaiian<span class="price">ksh.100</span></option>
+                        <option class="item">Sausage delux<span class="price">ksh.100</span></option>
+
                     </select>
                     <br>
                     <label for="total number">Choose the number you want</label>
@@ -106,7 +109,37 @@
                         <option value="3">3</option>
                     </select>
                     <br>
+                    <section id="basket">
+                        <p>Total price: <span class="total_price"></span></p>
+                    </section>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="pt-5">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <div class="container">
+                <h2>FIND US ON</h2>
+                <div class="row pt-3">
+                    <div class="col-md-4">
+                        <img src="./image/facebook.png" height="200px" id="img-1">
+                    </div>   
+                    <div class="col-md-4">
+                        <img src="./image/skype.png" height="200px" id="img-2">
+                    </div>  
+                    <div class="col-md-4">
+                        <img src="./image/twitter.png" height="200px" id="img-3">
+                    </div>  
+                    <div class="col-md-4">
+                        <img src="./image/you_tube.png" height="200px" id="img-4">
+                    </div>  
+
+            </div>
+            <div class="container">
+                <h3>Telephone Number - 0712345674</h3>
+                <h3>Email Address - Olakimzy460@gmail.com</h3>
             </div>
         </div>
     </section>

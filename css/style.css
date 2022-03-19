@@ -45,4 +45,11 @@
         font-size: 20px;
     }
 }
+.dropdown {
+    width: 400px;
+    margin: 80px auto;
+}
+.dropdown select {
+    width: 100%;
+}
 
