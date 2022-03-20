@@ -1,14 +1,23 @@
-
-.topnav {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+.section1 {
+    background-image: url(../image/pizza.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: purple;
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 50px;
+}
+.header.logo {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    float: left;
+}
+.header.logo i {
+    padding-right: 5rem;
+    color: var(--red);
 }
 .nav ul {
     float: right;
@@ -46,6 +55,11 @@
         font-size: 20px;
     }
 }
+.section2 {
+    background-image: url(../image/background3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .about-us {
     text-align: center;
     padding: 5px;
@@ -56,6 +70,11 @@
     margin: 10px;
     float: right;
     display: flex;
+}
+.section3 {
+    background-image: url(../image/background3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .dropdown {
     width: 400px;
