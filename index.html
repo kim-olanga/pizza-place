@@ -12,6 +12,7 @@
 </head>
 <body>
     <header class="section1">
+<<<<<<< HEAD
        <nav class="navbar">
            <div class="container-fluid">
                <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
@@ -36,14 +37,48 @@
         <h5>AT A SNEEZE WE ARE AT YOUR DOORSTEP</h5><br>
         <h6>WELCOME<br></h6><br>
     </div>
+=======
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"></a>
     
-    </header>
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="#Home" data-bs-toggle="tooltip" title="Home">HOME</a>
+                <a class="nav-link" href="#About" data-bs-toggle="tooltip" title="About">ABOUT</a>
+                <a class="nav-link" href="#Sizes" data-bs-toggle="tooltip" title="Sizes">SIZES</a>
+                <a class="nav-link" href="#Order" data-bs-toggle="tooltip" title="Order">ORDER</a>
+                <a class="nav-link" href="#Contact" data-bs-toggle="tooltip" title="Contact">CONTACT</a>
+                </ul>
+            </div>
+        
+>>>>>>> development
     
+           <div class="informaton">
+            <h1>PIZACHU</h1>
+            <h4>AT A SNEEZE WE ARE AT YOUR DOORSETEP<br></h4>
+            <h3>WELCOME<br></h3>
+           </div>
+        </nav>
+    
+<<<<<<< HEAD
     <div class="about-us section2 container" id="about">
         <h2>ABOUT US</h2>
             <p>We at <strong>PIZZACHU</strong>we are focused at satisfying our clients tastes and preferences.</p>
             <P>Come with an empty stomach and we promise that you'll leave feeling satisfied and craving for more.</P>
             <p><strong>PIZZACHU</strong>is a home for family,already existing friendship and friendhip that is yet to be born.</p>
+=======
+    </header>
+
+    <div class="section2">
+        <div class="container-fluid">
+            <div class="container" id="about-us">
+                <h1>ABOUT US</h1>
+                    <p>We at <strong>PIZZACHU</strong>we are focused at satisfying our clients tastes and preferences.</p>
+                    <P>Come with an empty stomach and we promise that you'll leave feeling satisfied and craving for more.</P>
+                    <p><strong>PIZZACHU</strong>is a home for family,already existing friendship and friendhip that is yet to be born.</p>
+            </div>
+        </div>
+>>>>>>> development
     </div>
 
     <section id="size" class="pt-3">
@@ -70,11 +105,16 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <section id="order" class="section3">
+=======
+    <section class="section5">
+>>>>>>> development
         <div class="container-fluid">
             <div class="container" id="order">
                 <h2>ORDER</h2>
             <div>
+<<<<<<< HEAD
                 <form action="" id="placeholder">
                     <label for="size">Choose the size</label>
                     <select name="" id="pizzasize" class="form-select">
@@ -205,6 +245,99 @@
         </div>
     </section>
 
+=======
+                <form action="placeOrder">
+                    <label for="pizzaSize" class="form-label">Choose the size</label>
+                    <select name="" id="pizzaSize" class="form-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select><br>
+                    
+                    <label for="pizzaCrust">Choose the crust</label>
+                    <select name="" id="pizzaCrust" class="form-select">
+                        <option value="Thick-crust">Thick-crust</option>
+                        <option value="Salted-crust">Salted-crust</option>
+                        <option value="Crispy">CRISPY</option>
+                        <option value="Gluten-free">Gluten-free</option>
+                    </select><br>
+        
+                    <label for="toppings">Choose your topping</label>
+                    <select class="toppings width-100%" multiple>
+                       <option value="Pepperoni">Pepperoni</option>
+                       <option value="BBQ">BBQ</option>
+                       <option value="Extra salt">Extra salt</option>
+                       <option value="Veggies">Veggies</option>
+                       <option value="Mushroom">Mushroom</option>
+                       <option value="Chicken">Chicken</option>
+                       <option value="Creame sauce">Creame sauce</option>
+                       <option value="Pinnaple">Pinnaple</option>
+                       <option value="Extra cheese">Extra cheese</option>
+                       <option value="Becon">Becon</option>
+                    </select><br>
+                
+                    <label for="totalQuantity" class="form-label">Quantity</label><br>
+                    <input type="number" name="quantity" id="pizzaQuantity" min="0" max="15" class="form-control" required value="1">
+
+                    <div class="section3">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success" id="makeOrder">Make order</button>
+                            </div>
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="container myOrder" id="myOrder">
+        <h3>Pizzachu Order</h3>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Total Amount</h6>
+            </div>
+            <div class="col-md-6">
+                <p id="total"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-info" id="delivery" onclick="needDelivery()">Delivery</button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid">
+            <div class="container" id="contact-us">
+                <h2>CONTACT US</h2>
+                <p>Have any compliments,complains, suggestions, requests? We at PIZZACHU we would love it if we heard yoyr feedback.</p>
+            </div>
+            <div class="container">
+                <form action="/action_page.php" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Enter your nickname" name="name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="form-control" id="messageText" cols="10" rows="20" placeholder="Input feedback" required></textarea>
+                        </div>
+                        <div class="pt-1">
+                            <button type="submit" class="btn btn-success order-button">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+            
+>>>>>>> development
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
