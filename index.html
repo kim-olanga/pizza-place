@@ -12,34 +12,34 @@
 </head>
 <body>
     <header class="section1">
-        <div class="nav">
-            <input type="checkbox" id="check">
-            <label for="check" id="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"></a>
+
+            <ul class="navbar-nav">
+                <a class="nav-link" href="#Home" data-bs-toggle="tooltip" title="Home">HOME</a>
+            <a class="nav-link" href="#About" data-bs-toggle="tooltip" title="About">ABOUT</a>
+            <a class="nav-link" href="#Sizes" data-bs-toggle="tooltip" title="Sizes">SIZES</a>
+            <a class="nav-link" href="#Order" data-bs-toggle="tooltip" title="Order">ORDER</a>
+            <a class="nav-link" href="#Contact" data-bs-toggle="tooltip" title="Contact">CONTACT</a>
+            </ul>
         </div>
     
-       <nav class="navbar">
-           <a href="#Home">HOME</a>
-           <a href="#About">ABOUT</a>
-           <a href="#Sizes">SIZES</a>
-           <a href="#Order">ORDER</a>
-           <a href="#Contact">CONTACT</a>
-       </nav>
 
        <div class="informaton">
-        <h1>PIZZACHU<br></h1>
-        <h2>AT A SNEEZE WE ARE AT YOUR DOORSETEP<br></h2>
+        <h1>PIZACHU</h1>
+        <h4>AT A SNEEZE WE ARE AT YOUR DOORSETEP<br></h4>
         <h3>WELCOME<br></h3>
     </div>
     
     </header>
     
-    <div class="about-us pt-2 container" id="about">
-        <h2>ABOUT US</h2>
-            <p>We at <strong>PIZZACHU</strong>we are focused at satisfying our clients tastes and preferences.</p>
-            <P>Come with an empty stomach and we promise that you'll leave feeling satisfied and craving for more.</P>
-            <p><strong>PIZZACHU</strong>is a home for family,already existing friendship and friendhip that is yet to be born.</p>
+    <div class="container-fluid">
+        <div class="container" id="about-us">
+            <h2>ABOUT US</h2>
+                <p>We at <strong>PIZZACHU</strong>we are focused at satisfying our clients tastes and preferences.</p>
+                <P>Come with an empty stomach and we promise that you'll leave feeling satisfied and craving for more.</P>
+                <p><strong>PIZZACHU</strong>is a home for family,already existing friendship and friendhip that is yet to be born.</p>
+        </div>
     </div>
 
     <section id="size" class="pt-3">
@@ -66,93 +66,102 @@
         </div>
     </section>
 
-    <section id="order" class="pt-4">
-        <div class="container">
-            <h2>ORDER</h2>
+    <section>
+        <div class="container-fluid">
+            <div class="container" id="order">
+                <h2>ORDER</h2>
             <div>
-                <form action="dropdown">
-                    <label for="size">Choose the size</label>
-                    <select name="size" id="size">
-                        <option class="item">Small <span class="price">ksh.500</span></option>
-                        <option class="item">Medium <span class="price">ksh.900</span></option>
-                        <option class="item">Large <span class="price">ksh.1200</span></option>
-                    </select>
-                    <br>
-                    <label for="crust">Choose the crust</label>
-                    <select name="crust" id="crust">
-                        <option class="item">Crispy <span class="price">ksh.150</span></option>
-                        <option class="item">stuffed <span class="price">ksh.250</span></option>
-                        <option class="item">Gliten-free <span class="price">ksh.350</span></option>
-                        
-                    </select>
-                    <br>
+                <form action="placeOrder">
+                    <label for="pizzaSize" class="form-label">Choose the size</label>
+                    <select name="" id="pizzaSize" class="form-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select><br>
+                    
+                    <label for="pizzaCrust">Choose the crust</label>
+                    <select name="" id="pizzaCrust" class="form-select">
+                        <option value="Thick-crust">Thick-crust</option>
+                        <option value="Salted-crust">Salted-crust</option>
+                        <option value="Crispy">CRISPY</option>
+                        <option value="Gluten-free">Gluten-free</option>
+                    </select><br>
+        
                     <label for="toppings">Choose your topping</label>
                     <select class="toppings width-100%" multiple>
-                        <option class="item">Pepperoni <span class="price">ksh.100</span></option>
-                        <option class="item">Meat delux<span class="price">ksh.100</span></option>
-                        <option class="item">Hawaiian<span class="price">ksh.100</span></option>
-                        <option class="item">Chicken periperi<span class="price">ksh.100</span></option>
-                        <option class="item">Mushroom<span class="price">ksh.100</span></option>
-                        <option class="item">BBQ steak<span class="price">ksh.100</span></option>
-                        <option class="item">Vegeterian<span class="price">ksh.100</span></option>
-                        <option class="item">Beef pepperoni<span class="price">ksh.100</span></option>
-                        <option class="item">Chicken hawaiian<span class="price">ksh.100</span></option>
-                        <option class="item">Sausage delux<span class="price">ksh.100</span></option>
+                       <option value="Pepperoni">Pepperoni</option>
+                       <option value="BBQ">BBQ</option>
+                       <option value="Extra salt">Extra salt</option>
+                       <option value="Veggies">Veggies</option>
+                       <option value="Mushroom">Mushroom</option>
+                       <option value="Chicken">Chicken</option>
+                       <option value="Creame sauce">Creame sauce</option>
+                       <option value="Pinnaple">Pinnaple</option>
+                       <option value="Extra cheese">Extra cheese</option>
+                       <option value="Becon">Becon</option>
+                    </select><br>
+                
+                    <label for="totalQuantity" class="form-label">Quantity</label><br>
+                    <input type="number" name="quantity" id="pizzaQuantity" min="0" max="15" class="form-control" required value="1">
 
-                    </select>
-                    <br>
-                    <label for="total number">Choose the number you want</label>
-                    <select name="total number" id="total number">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                    <br>
-                    <section id="basket">
-                        <p>Total price: <span class="total_price"></span></p>
-                    </section>
+                    <div class="section3">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success" id="makeOrder">Make order</button>
+                            </div>
+                        </div>
+                    </div> 
                 </form>
             </div>
         </div>
-
-        <form>
-           <h2>Delivery</h2> 
-            <br>
-            <input type="radio" name="agree" value="yes">yes
-            <br>
-            <input type="radio" name="agree" value="no">No        
-            <br>
-            <input type="submit">
-            <br>
-
-            <h2>Pick-up</h2> 
-            <br>
-            <input type="radio" name="agree" value="yes">yes
-            <br>
-            <input type="radio" name="agree" value="no">No
-            <br>
-            <input type="submit">
-        </form>
-
-        <button class="btn" onclick="display()">CHECKOUT</button>
     </section>
 
-    <section id="contact" class="pt-5">
-        <div class="container">
-            <h2>CONTACT</h2>
-            <div class="container">
+    <div class="container myOrder" id="myOrder">
+        <h3>Pizzachu Order</h3>
 
-                <section class="hbh">header</section>
-                <h1>haer</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Total Amount</h6>
+            </div>
+            <div class="col-md-6">
+                <p id="total"></p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-info" id="delivery" onclick="needDelivery()">Delivery</button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid">
+            <div class="container" id="contact-us">
+                <h2>CONTACT US</h2>
+                <p>Have any compliments,complains, suggestions, requests? We at PIZZACHU we would love it if we heard yoyr feedback.</p>
             </div>
             <div class="container">
-                <h3>Telephone Number - 0712345674</h3>
-                <h3>Email Address - Olakimzy460@gmail.com</h3>
+                <form action="/action_page.php" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Enter your nickname" name="name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="form-control" id="messageText" cols="20" rows="10" placeholder="Input feedback" required></textarea>
+                        </div>
+                        <div class="pt-1">
+                            <button type="submit" class="btn btn-success order-button">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-
-
+            
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
