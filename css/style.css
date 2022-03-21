@@ -1,14 +1,13 @@
-
-.topnav {
-    padding: 0;
-    margin: 0;
+.section1 {
+    background-image: url(../image/background4.png);
+    background-repeat: no-repeat;
+}
+.navbar {
+    padding: 2rm;
+    margin: 15px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-.body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: purple;
 }
 .nav ul {
     float: right;
@@ -57,6 +56,11 @@
     float: right;
     display: flex;
 }
+.section5 {
+    background-image: url(../image/background3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .dropdown {
     width: 400px;
     margin: 80px auto;
@@ -67,9 +71,10 @@
     display: none;
     margin: 20px;
 }
-
-.button {
-    text-align: center;
+.section6 {
+    background-image: url(../image/work4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .contact {
     text-align: center;
