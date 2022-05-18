@@ -1,6 +1,8 @@
-.section1 {
-    background-image: url(../image/background4.png);
-    background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+body{
+    background-image: url(../image/background3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 .navbar {
     padding: 2rm;
@@ -45,11 +47,7 @@
         font-size: 20px;
     }
 }
-.section2 {
-    background-image: url(../image/background3.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 .about-us {
     text-align: center;
     padding: 5px;
@@ -61,12 +59,7 @@
     float: right;
     display: flex;
 }
-<<<<<<< HEAD
-.section3 {
-=======
 .section5 {
->>>>>>> development
-    background-image: url(../image/background3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
