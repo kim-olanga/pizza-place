@@ -97,7 +97,7 @@ class Pizza {
     };
 
 
-   
+};
 let.submitButton = document.getElementById("makeOrder");
 submitButton.addEventListener("click",function() {
 
@@ -193,7 +193,7 @@ class Pizza {
             return 100;
         };
     };
-
+};
 function checkIfEmpty(object) {
     if (isNaN(object.pizzaQuantity)) {
         alert("please key in the amount needed");
